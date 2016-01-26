@@ -3,7 +3,7 @@
 namespace Roots\Sage\Assets;
 
 function assets() {
-	wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/assets/styles/bootstrap.min.css', false, null);
+	wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/assets/styles/united-bootstrap.css', false, null);
 	wp_enqueue_style('main_css', get_template_directory_uri().'/assets/styles/main.css', false, null);
 
 	if (is_single() && comments_open() && get_option('thread_comments')) {

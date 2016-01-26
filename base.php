@@ -18,18 +18,25 @@ use Roots\Sage\Wrapper;
 			do_action('get_header');
 			get_template_part('templates/header');
 		?>
-		<div class="wrap container" role="document">
-			<div class="content row"><!-- CAUTION: Bad Bootstrap HTML -->
-				<main class="main">
-					<?php include Wrapper\template_path(); ?>
-				</main><!-- /.main -->
-				<?php if (Setup\display_sidebar()) : ?>
+		<div class="container" role="document">
+			<?php if (Setup\display_sidebar()) { ?>
+			<div class="row">
+				<div class="col-md-8">
+					<main class="main">
+						<?php include Wrapper\template_path(); ?>
+					</main><!-- /.main -->
+				</div><div class="col-md-3 col-md-offset-1">
 					<aside class="sidebar">
 						<?php include Wrapper\sidebar_path(); ?>
 					</aside><!-- /.sidebar -->
-				<?php endif; ?>
-			</div><!-- /.content -->
-		</div><!-- /.wrap -->
+				</div>
+			</div><!-- row -->
+			<?php } else { ?>
+				<main class="main">
+					<?php include Wrapper\template_path(); ?>
+				</main><!-- /.main -->
+			<?php } ?>
+		</div><!-- container -->
 		<?php
 			do_action('get_footer');
 			get_template_part('templates/footer');
