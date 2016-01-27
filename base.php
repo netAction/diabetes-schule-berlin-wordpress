@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
 			do_action('get_header');
 			get_template_part('templates/header');
 		?>
-		<div class="container" role="document">
+		<main class="container" role="document">
 			<?php if (Setup\display_sidebar()) { ?>
 			<div class="row">
 				<div class="col-md-8">
@@ -36,7 +36,7 @@ use Roots\Sage\Wrapper;
 					<?php include Wrapper\template_path(); ?>
 				</main><!-- /.main -->
 			<?php } ?>
-		</div><!-- container -->
+		</main><!-- container -->
 		<?php
 			do_action('get_footer');
 			get_template_part('templates/footer');

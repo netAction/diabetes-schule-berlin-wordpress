@@ -23,6 +23,23 @@ article.post {
 	}
 }
 
+main {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+header {
+	nav.navbar {
+		border-radius: 0;
+
+		li.current_page_item, li.current-page-ancestor {
+			a {
+				background-color: #AE3910;
+			}
+		}
+	}
+}
+
 .widget-richtext {
 	margin-bottom: 30px;
 }
@@ -33,10 +50,24 @@ article.post {
 
 .widget-blogexcerpt {
 	margin-bottom: 30px;
+}
 
-
+.widget-blogpost, .widget-blogpost-small {
 	article {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
+
+
+		header {
+			margin-bottom: 10px;
+
+			time.updated {
+				color: #888;
+			}
+		}
+
+		h3 {
+			margin: 0;
+		}
 
 		.widget-blogexcerpt-thumbnail img {
 			width: 100%;
@@ -54,4 +85,9 @@ article.post {
 	input.form-control, textarea.form-control {
 		width: 100%;
 	}
+}
+
+
+@media print {
+
 }

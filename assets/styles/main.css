@@ -14,6 +14,17 @@ article.post .wp-post-image {
   display: block;
   height: auto;
 }
+main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header nav.navbar {
+  border-radius: 0;
+}
+header nav.navbar li.current_page_item a,
+header nav.navbar li.current-page-ancestor a {
+  background-color: #AE3910;
+}
 .widget-richtext {
   margin-bottom: 30px;
 }
@@ -23,10 +34,24 @@ article.post .wp-post-image {
 .widget-blogexcerpt {
   margin-bottom: 30px;
 }
-.widget-blogexcerpt article {
-  margin-bottom: 30px;
+.widget-blogpost article,
+.widget-blogpost-small article {
+  margin-bottom: 40px;
 }
-.widget-blogexcerpt article .widget-blogexcerpt-thumbnail img {
+.widget-blogpost article header,
+.widget-blogpost-small article header {
+  margin-bottom: 10px;
+}
+.widget-blogpost article header time.updated,
+.widget-blogpost-small article header time.updated {
+  color: #888;
+}
+.widget-blogpost article h3,
+.widget-blogpost-small article h3 {
+  margin: 0;
+}
+.widget-blogpost article .widget-blogexcerpt-thumbnail img,
+.widget-blogpost-small article .widget-blogexcerpt-thumbnail img {
   width: 100%;
   display: block;
   height: auto;

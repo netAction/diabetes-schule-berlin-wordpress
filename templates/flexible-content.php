@@ -24,6 +24,9 @@ if( have_rows('flexible-content') ):
 		elseif( get_row_layout() == 'button' ): 
 			get_template_part('templates/widget-button');
 
+		elseif( get_row_layout() == 'backbutton' ): 
+			get_template_part('templates/widget-backbutton');
+
 		elseif( get_row_layout() == 'columns' ): 
 			get_template_part('templates/widget-columns');
 
