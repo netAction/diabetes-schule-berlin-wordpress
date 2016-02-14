@@ -28,6 +28,60 @@ header nav.navbar li.current-page-ancestor a {
 .widget-richtext {
   margin-bottom: 30px;
 }
+.widget-richtext img.alignnone,
+.widget-richtext img.aligncenter,
+.widget-richtext img.alignright,
+.widget-richtext img.alignleft {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .widget-richtext img.alignright,
+  .widget-richtext img.alignleft {
+    width: 50%;
+  }
+  .widget-richtext img.alignright {
+    float: right;
+  }
+  .widget-richtext img.alignleft {
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .widget-richtext img.alignright,
+  .widget-richtext img.alignleft {
+    width: 33%;
+  }
+}
+.widget-richtext .gallery {
+  margin: 0 -15px 15px -15px;
+}
+.widget-richtext .gallery figure.gallery-item {
+  float: left;
+  padding: 0 15px 30px 15px;
+}
+.widget-richtext .gallery.gallery-columns-1 figure.gallery-item {
+  width: 100%;
+}
+.widget-richtext .gallery.gallery-columns-2 figure.gallery-item {
+  width: 50%;
+}
+.widget-richtext .gallery.gallery-columns-3 figure.gallery-item {
+  width: 33.33%;
+}
+.widget-richtext .gallery.gallery-columns-4 figure.gallery-item {
+  width: 25%;
+}
+.widget-richtext .gallery.gallery-columns-5 figure.gallery-item {
+  width: 20%;
+}
+.widget-richtext .gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .widget-jumbobox {
   margin-bottom: 30px;
 }
